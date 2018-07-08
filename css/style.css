@@ -1,0 +1,130 @@
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3),
+    0px 0px 2px rgba(0, 0, 0, 0.18);
+    padding: 10px;
+}
+h2 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+.input-field {
+    margin-bottom: 10px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    height: 34px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    font-size: 14px;
+    color: #000;
+    height: 34px;
+    cursor: pointer;
+}
+.add-task {
+    background: #4CAF50;
+    color: #fff;
+}
+/* hr {
+    margin: 30px 100px;
+    border-top: 1px solid #e0e0e0;
+} */
+ul.collections {
+    list-style: none;
+    font-size: 14px;
+    padding: 0px;
+}
+ul.collections .collection-item:first-of-type {
+    border-top:1px solid #f1f1f1;
+}
+
+ul.collections .collection-item {
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    border-top: none;
+}
+
+.delete-item {
+    cursor: pointer;
+    float: right;
+    color: #ccc;
+}
+
+.input-checkbox {
+    margin: 0;
+    position: relative;
+}
+
+.input-checkbox input {
+    padding: initial;
+    border: initial;
+    width: initial;
+    height: initial;
+    vertical-align: middle;
+    opacity: 0;
+    position: absolute;
+}
+
+.input-checkbox input + label {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.input-checkbox input:checked + label {
+    background: #4caf50;
+    border: 1px solid #4caf50;
+}
+
+.input-checkbox input:checked + label:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: white;
+    top: 8px;
+    transform: rotate(-48deg);
+    left: 3px;
+    
+}
+.input-checkbox input:checked + label:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: white;
+    top: 11px;
+    transform: rotate(45deg);
+    left: 0px;
+    
+}
