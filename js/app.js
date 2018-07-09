@@ -79,6 +79,7 @@ function deleteAll() {
     while(taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
+    localStorage.removeItem('todoList');
 }
 
 function filterTask(e) {
